@@ -8,4 +8,8 @@ scikit-learn
 sentence-transformers
 faiss-cpu
 pydantic==2.5.0
-requests==2.31.0 
+requests==2.31.0
+PyPDF2
+pdfplumber
+langchain
+langchain-community 

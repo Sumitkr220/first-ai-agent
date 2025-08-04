@@ -1,20 +1,15 @@
-# ===========================================
-# Python Weather API Project - .gitignore
-# ===========================================
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
 
-# ===========================================
-# Python Core Files
-# ===========================================
-
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -28,195 +23,26 @@ parts/
 sdist/
 var/
 wheels/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-Pipfile.lock
-
-# poetry
-poetry.lock
-
-# pdm
-.pdm.toml
-
-# PEP 582
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
+# Virtual environments
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# ===========================================
-# Virtual Environment
-# ===========================================
-
-# Virtual environments (multiple patterns for different naming conventions)
-venv/
-env/
-.venv/
-.env/
-virtualenv/
-.venv/
-env.bak/
-venv.bak/
-
-# ===========================================
-# Environment Variables & Secrets
-# ===========================================
-
-# Environment files (contains API keys)
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-.env.staging
-
-# Secrets and API keys
-secrets/
-secrets.json
-api_keys.txt
-credentials.json
-*.key
-*.pem
-*.p12
-*.pfx
-
-# ===========================================
-# IDE & Editor Files
-# ===========================================
-
-# VSCode
+# IDE
 .vscode/
-*.code-workspace
-
-# PyCharm
 .idea/
-*.iml
-*.ipr
-*.iws
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Vim
 *.swp
 *.swo
 *~
 
-# Emacs
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# ===========================================
-# OS Generated Files
-# ===========================================
-
-# macOS
+# OS
 .DS_Store
 .DS_Store?
 ._*
@@ -225,201 +51,22 @@ tramp
 ehthumbs.db
 Thumbs.db
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-*.lnk
-
-# Linux
-*~
-.fuse_hidden*
-.directory
-.Trash-*
-.nfs*
-
-# ===========================================
-# Logs & Temporary Files
-# ===========================================
-
-# Log files
+# Logs
 *.log
 logs/
-log/
+
+# API Keys and sensitive data
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Data files (optional - uncomment if you don't want to include data files)
+# *.pdf
+# *.csv
+# *.json
 
 # Temporary files
 *.tmp
 *.temp
-*.swp
-*.swo
-*~
-
-# Cache directories
-.cache/
-cache/
-__pycache__/
-
-# ===========================================
-# Database Files
-# ===========================================
-
-# SQLite
-*.db
-*.sqlite
-*.sqlite3
-
-# PostgreSQL
-*.psql
-
-# MySQL
-*.mysql
-
-# ===========================================
-# API Documentation & Generated Files
-# ===========================================
-
-# OpenAPI/Swagger generated files
-openapi.json
-swagger.json
-
-# API documentation builds
-docs/build/
-docs/_build/
-
-# ===========================================
-# Testing & Development
-# ===========================================
-
-# Test files
-test_*.py
-*_test.py
-tests/
-test/
-
-# Coverage reports
-.coverage
-coverage.xml
-htmlcov/
-
-# ===========================================
-# Deployment & Production
-# ===========================================
-
-# Docker
-Dockerfile
-docker-compose.yml
-.dockerignore
-
-# Kubernetes
-*.yaml
-*.yml
-k8s/
-
-# Server files
-*.pid
-*.sock
-
-# ===========================================
-# Project Specific Exclusions
-# ===========================================
-
-# Weather API specific
-weather_cache/
-api_responses/
-temp_data/
-
-# OpenAI API responses (if cached)
-openai_cache/
-gpt_responses/
-
-# Test output files
-test_output/
-debug_output/
-
-# ===========================================
-# Backup Files
-# ===========================================
-
-# Backup files
-*.bak
-*.backup
-*.old
-*.orig
-
-# ===========================================
-# Configuration Files (if sensitive)
-# ===========================================
-
-# Local configuration
-config.local.py
-settings.local.py
-local_config.py
-
-# ===========================================
-# Documentation Builds
-# ===========================================
-
-# Sphinx
-docs/_build/
-docs/build/
-
-# MkDocs
-site/
-
-# ===========================================
-# Package Managers
-# ===========================================
-
-# npm (if using any Node.js tools)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# ===========================================
-# Git Related
-# ===========================================
-
-# Git hooks (if any)
-.git/hooks/
-
-# ===========================================
-# Security & Compliance
-# ===========================================
-
-# Security scan results
-security_scan/
-vulnerability_report/
-
-# Compliance files
-compliance/
-audit/
-
-# ===========================================
-# Performance & Monitoring
-# ===========================================
-
-# Performance logs
-performance/
-metrics/
-monitoring/
-
-# ===========================================
-# Archive Files
-# ===========================================
-
-# Compressed files
-*.zip
-*.tar.gz
-*.rar
-*.7z
-
-# ===========================================
-# End of .gitignore
-# =========================================== 
+.cache/ 

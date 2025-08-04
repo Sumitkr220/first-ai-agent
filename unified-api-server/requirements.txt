@@ -1,0 +1,14 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+openai>=1.6.1
+python-dotenv==1.0.0
+requests==2.31.0
+pandas==2.1.4
+numpy==1.24.3
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-text-splitters==0.0.1
+pdfplumber==0.10.3
+langgraph==0.0.40 
